@@ -38,11 +38,11 @@ Oct 08 14:28:13 pingping-X450CC systemd[1]: tomcat.service: Failed with result '
 http-alt	8080/udp`.  
 5. Finally, remove tomcat.   
 6. Reinstall tomcat. Still doesn't work.   
-7. Finally [this one](http://unix.stackexchange.com/questions/235891/tomcat-8-will-not-start-after-initial-install) help: 
+7. Finally [this one](http://unix.stackexchange.com/questions/235891/tomcat-8-will-not-start-after-initial-install) help:   
 7.1 giving tomcat user ownership of the whole tomcat directory:  
 `cd /opt && sudo chown -R tomcat tomcat/`  
-7.2 and commenting out below line in /etc/systemd/system/tomcat.service:  
-Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'.  
+7.2 and commenting out below line in /etc/systemd/system/tomcat.service:    
+`Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'`.    
 
 ## Bingo
 

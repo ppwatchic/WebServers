@@ -10,7 +10,7 @@ Deploy a war file into tomcat's webapps folder.
 2. Result from the said command: 
 **Job for tomcat.service failed because the control process exited with error code. 
 See "systemctl status tomcat.service" and "journalctl -xe" for details.**   
-3. Run the command `journalctl -xe` to view details:
+3. Run the command `journalctl -xe` to view details:  
 ```
 -- Defined-By: systemd  
 -- 

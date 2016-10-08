@@ -8,11 +8,8 @@ Deploy a war file into tomcat's webapps folder.
 ### Start tomcat 
 1. To start tomcat using this command:`sudo systemctl start tomcat`.   
 2. Result from the said command: 
-```
-Job for tomcat.service failed because the control process exited with error code. 
-See "systemctl status tomcat.service" and "journalctl -xe" for details.
-
-```.  
+**Job for tomcat.service failed because the control process exited with error code. 
+See "systemctl status tomcat.service" and "journalctl -xe" for details.**   
 3. Run the command `journalctl -xe` to view details:
 ```
 -- Defined-By: systemd
@@ -35,7 +32,7 @@ Oct 08 14:28:13 pingping-X450CC systemd[1]: Failed to start Apache Tomcat Web Ap
 -- The result is failed.
 Oct 08 14:28:13 pingping-X450CC systemd[1]: tomcat.service: Unit entered failed state.
 Oct 08 14:28:13 pingping-X450CC systemd[1]: tomcat.service: Failed with result 'exit-code'.
-```. 
+```.   
 4. Check who is using port 8080 using command: `grep 8080 /ect/services` and getting following:   
 `http-alt	8080/tcp	webcache	# WWW caching service  
 http-alt	8080/udp`. 

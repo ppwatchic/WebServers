@@ -4,8 +4,7 @@ Deploy a war file into tomcat's webapps folder.
 ## Reference
 [Install tomcat 8](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04). 
 
-## Issue
-
+## Issue  
 ### Start tomcat 
 1. To start tomcat using this command:`sudo systemctl start tomcat`.   
 2. Result from the said command: 

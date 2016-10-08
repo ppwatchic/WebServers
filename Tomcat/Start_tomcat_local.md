@@ -11,7 +11,8 @@ Deploy a war file into tomcat's webapps folder.
 **Job for tomcat.service failed because the control process exited with error code. 
 See "systemctl status tomcat.service" and "journalctl -xe" for details.**   
 3. Run the command `journalctl -xe` to view details:
-```-- Defined-By: systemd
+```
+-- Defined-By: systemd  
 -- 
 -- Unit tomcat.service has begun starting up.
 Oct 08 14:28:13 pingping systemd[17167]: tomcat.service: Failed at step EXEC spawning /opt/tomcat/bin/startup.sh: Perm
